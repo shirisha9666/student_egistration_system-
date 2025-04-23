@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+.h1-tag{
+  font-size: 24px ;
+}
+h1{
+  margin: 0;
+  padding: 0;
+}
+.main-container{
+  height: 100vh;
+  width: 100%;
+  background-color: #1d2634;
+}
+.sidebar{
+  background-color: #7e8899;
+  height: 100vh;
+ 
+}
+.sidebar ul{
+  padding: 0;
+}
+.sidebar ul li a{
+text-decoration: none;
+}
+.hover-sidear-focus{
+  background-color: #343435;
+  cursor: pointer;
+}
+.hover-sidear:hover{
+  background-color: #343435;
+  cursor: pointer;
+}
+.hover-sidear-focus-bg a{
+color: white;
+
+
+}
+.hover-sidear-heading a{
+  color: white;
+  
+  
   }
+.sidev-postion {
+  position: relative;
+  top: 0;
+  left: 1px;
 }
+.main{
+  position: relative;
+  transition: 0.5s;
+}
+/* .sidebarLinks{
+  position: absolute;
+  top: 0;
+  right: 80px;
+  width: 100%;
+} */
+.sidebarmenu{
+  display: none;
+}
+.show{
+  display: block;
+ 
+}
+.hide{
+  display: none;
+}
+/* .hover-sidear{
+  background-color: #343435;
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* media */
+
+.sidebarLinks{
+  display: block;
+}
+.search-input{
+  border: 2px solid #5288e5;
+  background-color: #5288e5;
+}
+.search-input input{
+ background-color: #5288e5;
+ width: 100%;
+ outline: none;
+ border: none;
+ font-size: 15px;
+ color: white;
+}
+.search-input input[type="text"]{
+  color: white;
+ 
+}
+.findId-sidebar{
+  display: none;
+}
+.card-custom-width {
+  width: 19rem;
+  background-color: #FFBC82;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.header{
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+.red-bg{
+  background-color:rgba(169, 114, 133, 0.8) ;
+}
+.btn button{
+  border: none;
+  outline: none;
+  
+  border-radius: 5px;
+  color: rgba(223, 85, 134, 0.8);
+  
+}
+.btn button:hover{
+  background-color: rgba(44, 55, 181, 0.8);
+  color: white;
+  outline: none;
+}
+.card-icon{
+  background-color:#FF6B89;
+  border-radius:4px;
+  color: white;
+}
+.card-icon:hover{
+background-color: #52EEFF;
+}
+input::placeholder{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 951px) {
+ .card-custom-width{
+  width: 100%;
+ }
+  /* .sidebarLinks{
+    display: none;
+  } */
+  /* .f-20{
+    font-family: 15px;
+  }
+
+  .f-20{
+    font-size: 18px;
+  }
+  .f-16{
+    font-size: 11px;
+  } */
+  h1{
+    font-size: 15px;
+  }
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ @media screen and (max-width: 992px) {
+  .search-input{
+    width: 50%;
+      }
+
+  .f-20{
+    font-family: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .f-20{
+    font-size: 18px;
   }
+  .f-16{
+    font-size: 11px;
+  } 
+  h1{
+    font-size: 15px;
+  }
+ }
+
+ @media screen and (max-width: 600px){
+.f20{
+  font-size: 15px;
 }
+.h1-tag{
+  font-size: 18px ;
+} .f-16{
+  font-size: 10px;
+}
+ }
+ @media screen and (max-width: 300px){
+  .f20{
+    font-size: 10px;
+  }
+  .h1-tag{
+    font-size: 14px ;
+  } .f-16{
+    font-size: 9px;
+  }
+   }

@@ -1,0 +1,19 @@
+{
+  "course": [
+    {
+      "course_name": "Special4444",
+      "course_type": "Individual",
+      "id": "6c75"
+    },
+    {
+      "course_name": "hello world ",
+      "course_type": "Special",
+      "id": "d765"
+    },
+    {
+      "course_name": "git123",
+      "course_type": "Individual",
+      "id": "f33d"
+    }
+  ]
+}
