@@ -23,7 +23,7 @@ const StudentRegistrations = ({courseFilter}) => {
     <div className='p-2 '>
     <div className='d-flex justify-content-between align-items-center'>
     <div className='text-white'>
-      <h1 className='h1-tag'>Course</h1>
+      <h1 className='h1-tag'>Student Registration </h1>
     </div>
      <div className=' text-left pt-2 btn ' onClick={handleShowCourseRegister}>
           <button className="p-2 f-16 fw-600  font-semebold outline-nonefocus:outline-none focus-ring
