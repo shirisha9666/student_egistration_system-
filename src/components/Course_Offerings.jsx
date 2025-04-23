@@ -38,7 +38,8 @@ const CourseOfferings = ({courseFilter}) => {
     <div>
    
       <OfferingCard offeringData={offeringData} setOfferingData={setOfferingData}
-      handleCloseOffering={handleCloseOffering} courseFilter={courseFilter}/>
+      handleCloseOffering={handleCloseOffering} courseFilter={courseFilter}
+      handleShowOffring={handleShowOffring}/>
 
     </div>
   </div>

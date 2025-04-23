@@ -25,14 +25,42 @@ h1{
   height: 100vh;
   width: 100%;
   background-color: #1d2634;
+
+}
+.reponsiveToggle{
+  /* position: absolute; */
+  /* left: 0; */
 }
 .sidebar{
   background-color: #7e8899;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
  
+
+  /* position: relative; */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px; 
+  background-color: #7e8899;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%); 
+  z-index: 1000; */
+  
+ 
+}
+.sidebar.show {
+  transform: translateX(0); /* slide in */
 }
 .sidebar ul{
   padding: 0;
+}
+.web.shifted {
+  margin-left: 250px; /* same as sidebar width */
 }
 .sidebar ul li a{
 text-decoration: none;
@@ -60,10 +88,10 @@ color: white;
   top: 0;
   left: 1px;
 }
-.main{
+/* .main{
   position: relative;
   transition: 0.5s;
-}
+} */
 /* .sidebarLinks{
   position: absolute;
   top: 0;
@@ -75,6 +103,7 @@ color: white;
 }
 .show{
   display: block;
+
  
 }
 .hide{
@@ -112,7 +141,11 @@ color: white;
   display: none;
 }
 .card-custom-width {
-  width: 19rem;
+  display: flex;
+  /* justify-content: space-evenly; */
+ 
+  width: 20rem;
+
   background-color: #FFBC82;
   color: white;
   font-weight: 600;

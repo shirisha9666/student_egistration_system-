@@ -13,10 +13,7 @@ const Sidebar = ({ sidebarIcons,openSidebarToggle ,OpenSideba,findId,courseData}
 
   return (
     <div className="text-white main">
-      {/* menubar */}
-        {/* <span className={`px-3 text-right  fw-600  f-18  cursor `}
-        onClick={OpenSidebar}><HiMenu /></span> */}
-     {/* menubar */}
+  
      {sidebarIcons?(<div className={` `}>
    
    <ul className="sidebar-ul-tag f-16 fw-400  ">

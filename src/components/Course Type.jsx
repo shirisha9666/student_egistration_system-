@@ -15,17 +15,17 @@ const CourseType = ({courseFilter}) => {
 
   
 
-  const [course,setCourse]=useState([])
+  const [courseType,setCourseType]=useState([])
   
   useEffect(() => {
     axios.get("http://localhost:3001/course")
-      .then(res =>setCourse(res.data))
+      .then(res =>setCourseType(res.data))
       .catch(err => console.log("error", err));
   }, []);
-  console.log("courses courseType",course)
+  console.log("courses courseType",courseType)
 
   return (
-    <div className='p-2 '>
+    <div className='p-2 d'>
       <div className='d-flex justify-content-between align-items-center'>
       <div className='text-white'>
         <h1 className='h1-tag'>Course Types</h1>
@@ -36,7 +36,8 @@ const CourseType = ({courseFilter}) => {
     </div>
     <div>
       <div>
-        <CourseTypeCard course={course} setCourse={setCourse} courseFilter={courseFilter}/>
+        <CourseTypeCard courseType={courseType} setCourseType={setCourseType} 
+        courseFilter={courseFilter} handleShow={handleShow}/>
       </div>
     </div>
     <Coursetypemodel handleClose={handleClose} handleShow={handleShow} show={show}

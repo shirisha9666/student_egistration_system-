@@ -6,7 +6,7 @@ import { FaRegEdit } from "react-icons/fa";
 import axios from 'axios';
 import OfferingCardEdit from '../model/OfferingCardEdit';
 
-const OfferingCard = ({offeringData,setOfferingData,courseFilter}) => {
+const OfferingCard = ({offeringData,setOfferingData,courseFilter,handleShowOffring}) => {
   console.log("OfferingCard.courseFilter",courseFilter)
     const[offerRingId,setOfferingId]=useState()
     
@@ -31,7 +31,7 @@ function handleOffreingEdit(id){
     setOfferingId(id)
     navigate(`${location.pathname}?id=${id}`,{replace:true})
     handleShowOffringEdit()
-
+   
 }
 console.log("OfferingCard.CourseOfferings",offeringData)
   return (

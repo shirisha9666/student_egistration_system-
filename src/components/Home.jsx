@@ -50,21 +50,23 @@ const Home = () => {
     
   return (
     <>
+    
   
-    <div className="main-container d-flex w-100  ">
+    <div className="main-container d-flex w-100   ">
+      <div className="w-5">
        
-        <div className={`sidebar  `}>
+        <div className={`sidebar `}>
         <span className={`px-3 text-right text-white  fw-600  f-18  cursor `}
               onClick={OpenSidebar}><HiMenu /></span>
-        {/* <div className={` sidebar col-2`}> */}
-        <div className={` ${openSidebarToggle?"show":"hide"}  w-50vh `}>
+   
+        <div className={` ${openSidebarToggle?"show":"hide"}  w-50vh reponsiveToggle`}>
         <Sidebar sidebarIcons={sidebarIcons}  openSidebarToggle={openSidebarToggle}
             OpenSidebar={OpenSidebar}
             />
         </div>
            </div>
 
-
+           </div>
 
 
         <div className="web">

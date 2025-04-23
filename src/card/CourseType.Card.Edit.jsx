@@ -11,6 +11,7 @@ const CourseTypeCardEdit = ({
   showEdit,
   setEdit,
   handleEditShow,
+  
   findId,
 }) => {
   const [values, setValues] = useState({
@@ -28,13 +29,14 @@ const CourseTypeCardEdit = ({
         .then((res) => {
           setData(res.data);
           setValues({
-            course_name: res.data.course_name,
-            course_type: res.data.course_type,
+            course_name: res.data.course_name || " ",
+            course_type: res.data.course_type || "",
           });
         })
         .catch((err) => console.log("editCourseTypeCard", err));
     }
   }, [findId]);
+
 
   function handelEditSubmit(e) {
     e.preventDefault();
@@ -52,7 +54,7 @@ const CourseTypeCardEdit = ({
       .catch((err) => console.log("handelEditSubmit", err));
   }
 
-  console.log("values.course_name", values.course_name);
+  console.log("values.course_name", values);
   return (
     <Modal show={showEdit} onHide={handleEditClose}>
       <Modal.Header closeButton>
@@ -63,9 +65,10 @@ const CourseTypeCardEdit = ({
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Course Type</Form.Label>
             <Form.Select
-              type="course_type"
+              type="text"
               placeholder="course type"
               autoFocus
+              value={values.course_type}
               onChange={(e) =>
                 setValues({ ...values, course_type: e.target.value })
               }
@@ -95,7 +98,7 @@ const CourseTypeCardEdit = ({
           Close
         </Button>
         <Button variant="primary" onClick={handelEditSubmit}>
-          Save Changes
+          Upadte Changes
         </Button>
       </Modal.Footer>
       
