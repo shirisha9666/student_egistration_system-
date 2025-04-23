@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import OfferingCard from '../card/OfferingCard'
 import OfferingCardModel from '../model/OfferingCardModel'
 
-const CourseOfferings = () => {
+const CourseOfferings = ({courseFilter}) => {
     // create
     const [offeringData,setOfferingData]=useState([])
     
@@ -38,7 +38,7 @@ const CourseOfferings = () => {
     <div>
    
       <OfferingCard offeringData={offeringData} setOfferingData={setOfferingData}
-      handleCloseOffering={handleCloseOffering}/>
+      handleCloseOffering={handleCloseOffering} courseFilter={courseFilter}/>
 
     </div>
   </div>

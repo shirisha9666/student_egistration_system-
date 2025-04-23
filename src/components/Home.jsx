@@ -42,15 +42,12 @@ const Home = () => {
     name:"Student Registrations",
     link:"/studentRegistations",
     icon:<FaUserPlus/>}]
-    // get functions
- 
+
+    const [courseFilter, setCourseFilter] = useState("");
     
-    // useEffect(() => {
-    //   axios.get("http://localhost:3002/course")
-    //     .then(res =>setCourseData(res.data))
-    //     .catch(err => console.log("error", err));
-    // }, []);
-    // console.log("courseData",courseData)
+    // filter heare
+
+    
   return (
     <>
   
@@ -72,13 +69,15 @@ const Home = () => {
 
         <div className="web">
             <div>
-            <Header/>
+            <Header courseFilter={courseFilter}
+            setCourseFilter={setCourseFilter}/>
             </div>
         <Routes>
             
-           <Route path="/:id" element={<CourseType />} />
-           <Route path="/course/offerings/:id" element={<CourseOfferings />} />
-           <Route path="/courses/:id" element={<Courses />} />
+           <Route path="/:id" element={<CourseType courseFilter={courseFilter}/>} />
+           <Route path="/course/offerings/:id" element={<CourseOfferings 
+           courseFilter={courseFilter}/>} />
+           <Route path="/courses/:id" element={<Courses   courseFilter={courseFilter}/>} />
            <Route
              path="/studentRegistations"
              element={<StudentRegistrations />}

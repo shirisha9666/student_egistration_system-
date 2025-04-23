@@ -29,6 +29,21 @@
       "id": "0345",
       "course_name": "English",
       "course_type": "Got"
+    },
+    {
+      "id": "d535",
+      "course_name": "Html",
+      "course_type": "English"
+    },
+    {
+      "id": "fb43",
+      "course_name": "Bootstrap",
+      "course_type": "English"
+    },
+    {
+      "id": "ea86",
+      "course_name": "Python",
+      "course_type": "Hindi"
     }
   ]
 }

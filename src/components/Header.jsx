@@ -1,18 +1,33 @@
 import { Button } from 'bootstrap'
 import React from 'react'
 import { FaSearch } from "react-icons/fa";
+import Form from "react-bootstrap/Form";
 
-const Header = () => {
+const Header = ({ setCourseFilter, courseFilter }) => {
+  console.log("courseFilter", courseFilter)
   return (
-    <div className='header'>
-    <div className='  w-100 search-input d-flex justify-content-center
-    align-items-center px-2 '>
-        <input className='p-3 w-100 f-20 fw-500 ' placeholder='Search  '/>
-        <FaSearch className='cursor text-white'/>
-    </div>
-   
+    <div className='header '>
+      <div className='search-input d-flex justify-content-center
+    align-items-center w-100'>
 
-</div>
+        <select className='p-2 w-100 f-16 fw-500 border border-none '
+          placeholder='Search  ' value={courseFilter}
+          onChange={(e) => setCourseFilter(e.target.value)}>
+          <option value="">SelectType</option>
+          <option value="Individual">Individual</option>
+          <option value="Group">Group</option>
+          <option value="Special">Special</option>
+          <option value="Hindi">Hindi</option>
+          <option value="English">English</option>
+          <option value="Urdu">Urdu</option>
+
+        </select>
+
+
+      </div>
+
+
+    </div>
   )
 }
 

@@ -5,7 +5,7 @@ import axios from 'axios'
 import CourseEditModel from '../model/Course.edit.model'
 
 
-const Courses = () => {
+const Courses = (  {courseFilter}) => {
 
 
   // create
@@ -39,7 +39,8 @@ const Courses = () => {
   <div>
     <div>
     {/* <CourseCard /> */}
-      <CourseCard courseData={courseData} setCourseData={setCourseData}/>
+      <CourseCard courseData={courseData} setCourseData={setCourseData}
+      courseFilter={courseFilter}/>
     </div>
   </div>
  

@@ -6,7 +6,7 @@ import CourseTypeCard from '../card/CourseType.Card';
 
 
 
-const CourseType = () => {
+const CourseType = ({courseFilter}) => {
   
   const [show, setShow] = useState(false);
 
@@ -36,7 +36,7 @@ const CourseType = () => {
     </div>
     <div>
       <div>
-        <CourseTypeCard course={course} setCourse={setCourse}/>
+        <CourseTypeCard course={course} setCourse={setCourse} courseFilter={courseFilter}/>
       </div>
     </div>
     <Coursetypemodel handleClose={handleClose} handleShow={handleShow} show={show}

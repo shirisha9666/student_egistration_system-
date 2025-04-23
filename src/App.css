@@ -80,6 +80,9 @@ color: white;
 .hide{
   display: none;
 }
+.header-hide{
+  display: none;
+}
 /* .hover-sidear{
   background-color: #343435;
 } */

@@ -8,7 +8,8 @@ import axios from 'axios';
 import { useNavigate, useLocation } from "react-router-dom";
 
 
-const CourseCard = ({ courseData,setCourseData }) => {
+const CourseCard = ({ courseData,setCourseData,courseFilter }) => {
+  console.log("courseFilter.CourseCard",courseFilter)
   const navigate = useNavigate();
   const location = useLocation();
   const [showCourseEdit, setCourseEdit] = useState(false)
@@ -39,7 +40,7 @@ function handleDeleteLanguageCourse(id){
 
   return (
     <div className='d-flex gap-2 flex-wrap '>
-      {courseData.map((item, index) => {
+      {courseData.filter(item=>!courseFilter||item.course_type===courseFilter).map((item, index) => {
         return (
           <Card key={index} style={{ background: "#FFBC82" }}
             className='text-white text-white fw-600  card-custom-width'>

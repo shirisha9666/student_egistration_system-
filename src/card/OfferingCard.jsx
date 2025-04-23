@@ -6,7 +6,8 @@ import { FaRegEdit } from "react-icons/fa";
 import axios from 'axios';
 import OfferingCardEdit from '../model/OfferingCardEdit';
 
-const OfferingCard = ({offeringData,setOfferingData}) => {
+const OfferingCard = ({offeringData,setOfferingData,courseFilter}) => {
+  console.log("OfferingCard.courseFilter",courseFilter)
     const[offerRingId,setOfferingId]=useState()
     
      const [showOfferingEdit,setOfferingEdit]=useState(false)
@@ -35,7 +36,7 @@ function handleOffreingEdit(id){
 console.log("OfferingCard.CourseOfferings",offeringData)
   return (
     <div className='d-flex gap-2 flex-wrap '>
-    {offeringData.map((item, index) => {
+    {offeringData.filter(item=>!courseFilter||item.course_type===courseFilter).map((item, index) => {
       return (
         <Card key={index} style={{ background: "#FFBC82" }}
           className='text-white text-white fw-600  card-custom-width'>
