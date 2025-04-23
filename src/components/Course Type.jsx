@@ -5,12 +5,16 @@ import Coursetypemodel from '../model/Course.type.model';
 import CourseTypeCard from '../card/CourseType.Card';
 
 
+
 const CourseType = () => {
   
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  
+
   const [course,setCourse]=useState([])
   
   useEffect(() => {

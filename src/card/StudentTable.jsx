@@ -6,17 +6,17 @@ const StudentTable = ({studentData}) => {
  
     
   return (
-    <Table striped bordered hover>
-    <thead>
+    <Table striped bordered hover responsive variant size >
+    <thead className='f-18'>
       <tr>
         <th>Student_id</th>
-        <th>student_name</th>
+        <th>Student_name</th>
         <th>course_name</th>
         <th>course_type</th>
         <th>contact</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className='f-16'>
         {studentData.map((item,index)=>{
             return(
                 <tr key={index}>

@@ -5,17 +5,24 @@ import { MdDelete } from "react-icons/md";
 import { FaRegEdit } from "react-icons/fa";
 import CourseEditModel from '../model/Course.edit.model';
 import axios from 'axios';
+import { useNavigate, useLocation } from "react-router-dom";
+
 
 const CourseCard = ({ courseData,setCourseData }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [showCourseEdit, setCourseEdit] = useState(false)
   const handleShowCourseEdit = () => setCourseEdit(true)
   const handleCloseCourseEdit = () => setCourseEdit(false)
   const [courseFindId, setCourseFindId] = useState()
 
 
+
   function handleCourseEditShow(id) {
     console.log("Clicked course ID:", id);
+    navigate(`${location.pathname}?id=${id}`, { replace: true });
  setCourseFindId(id)
+ handleShowCourseEdit()
  }
 
 // deleteFunction
@@ -51,7 +58,7 @@ function handleDeleteLanguageCourse(id){
               <Card.Link href="#" className='card-icon  p-2' onClick={() => {
                 console.log("handleCourseEditShow", item.id)
                 handleCourseEditShow(item.id)
-                handleShowCourseEdit()
+               
               }}><FaRegEdit /></Card.Link>
             </Card.Body>
 

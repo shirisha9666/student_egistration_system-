@@ -25,17 +25,17 @@ const Home = () => {
   const sidebarIcons=[
     {
     name:"Course Types",
-    link:"./",
+    link:"./:id",
     icon:<HiOutlineAcademicCap/>
   },
   {
     name:"Courses",
-    link:"/courses",
+    link:"/courses/:id",
     icon:<SiBookstack/>
   },
   {
     name:"Course Offerings",
-    link:"/course/offerings",
+    link:"/course/offerings/:id",
  icon:<MdCastForEducation/>
   },
   {
@@ -76,9 +76,9 @@ const Home = () => {
             </div>
         <Routes>
             
-           <Route path="/" element={<CourseType />} />
-           <Route path="/course/offerings" element={<CourseOfferings />} />
-           <Route path="/courses" element={<Courses />} />
+           <Route path="/:id" element={<CourseType />} />
+           <Route path="/course/offerings/:id" element={<CourseOfferings />} />
+           <Route path="/courses/:id" element={<Courses />} />
            <Route
              path="/studentRegistations"
              element={<StudentRegistrations />}

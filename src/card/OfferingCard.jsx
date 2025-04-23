@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { MdDelete } from "react-icons/md";
-
+import { useNavigate, useLocation, replace } from "react-router-dom";
 import { FaRegEdit } from "react-icons/fa";
 import axios from 'axios';
 import OfferingCardEdit from '../model/OfferingCardEdit';
@@ -12,6 +12,9 @@ const OfferingCard = ({offeringData,setOfferingData}) => {
      const [showOfferingEdit,setOfferingEdit]=useState(false)
         const handleShowOffringEdit=()=>setOfferingEdit(true)
         const handleCloseOfferingEdit=()=>setOfferingEdit(false)
+
+          const navigate = useNavigate();
+          const location = useLocation();
     // deleteFunction
 function handleDeleteOfferingCourse(id){
 
@@ -25,6 +28,8 @@ function handleDeleteOfferingCourse(id){
 //   
 function handleOffreingEdit(id){
     setOfferingId(id)
+    navigate(`${location.pathname}?id=${id}`,{replace:true})
+    handleShowOffringEdit()
 
 }
 console.log("OfferingCard.CourseOfferings",offeringData)
@@ -49,7 +54,7 @@ console.log("OfferingCard.CourseOfferings",offeringData)
             <Card.Link href="#" className='card-icon  p-2' onClick={() => {
               console.log("handleCourseEditShow", item.id)
               handleOffreingEdit(item.id)
-              handleShowOffringEdit()
+        
             }}><FaRegEdit /></Card.Link>
           </Card.Body>
 
