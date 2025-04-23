@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shirisha9666/student_egistration_system-/static/css/main.4b5f515c.css",
+    "main.js": "/shirisha9666/student_egistration_system-/static/js/main.bb62f472.js",
+    "static/js/453.ed3810f9.chunk.js": "/shirisha9666/student_egistration_system-/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/shirisha9666/student_egistration_system-/index.html",
+    "main.4b5f515c.css.map": "/shirisha9666/student_egistration_system-/static/css/main.4b5f515c.css.map",
+    "main.bb62f472.js.map": "/shirisha9666/student_egistration_system-/static/js/main.bb62f472.js.map",
+    "453.ed3810f9.chunk.js.map": "/shirisha9666/student_egistration_system-/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4b5f515c.css",
+    "static/js/main.bb62f472.js"
+  ]
+}
