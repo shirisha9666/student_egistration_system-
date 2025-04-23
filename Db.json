@@ -24,6 +24,16 @@
       "id": "b03f",
       "course_name": "m",
       "course_type": "Group"
+    },
+    {
+      "id": "7681",
+      "course_name": "",
+      "course_type": ""
+    },
+    {
+      "id": "7681",
+      "course_name": "Html",
+      "course_type": "Individual"
     }
   ]
 }

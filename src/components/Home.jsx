@@ -25,7 +25,7 @@ const Home = () => {
   const sidebarIcons=[
     {
     name:"Course Types",
-    link:"./:id",
+    link:"./",
     icon:<HiOutlineAcademicCap/>
   },
   {
@@ -75,7 +75,7 @@ const Home = () => {
             </div>
         <Routes>
             
-           <Route path="/:id" element={<CourseType courseFilter={courseFilter}/>} />
+           <Route path="/" element={<CourseType courseFilter={courseFilter}/>} />
            <Route path="/course/offerings/:id" element={<CourseOfferings 
            courseFilter={courseFilter}/>} />
            <Route path="/courses/:id" element={<Courses   courseFilter={courseFilter}/>} />
