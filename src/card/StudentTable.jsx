@@ -11,6 +11,7 @@ const StudentTable = ({courseFilter,studentData}) => {
       <tr>
         <th>Student_id</th>
         <th>Student_name</th>
+        <th>Student_email</th>
         <th>course_name</th>
         <th>course_type</th>
         <th>contact</th>
@@ -22,6 +23,7 @@ const StudentTable = ({courseFilter,studentData}) => {
                 <tr key={index}>
                 <td>{item.id}</td>
                 <td>{item.student_name}</td>
+                <td>{item.email}</td>
                 <td>{item.course_name}</td>
                 <td>{item.course_type}</td>
                 <td>{item.contact}</td>
