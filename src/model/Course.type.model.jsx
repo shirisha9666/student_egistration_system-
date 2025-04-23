@@ -12,7 +12,7 @@ const Coursetypemodel = ({ show, setShow, handleClose, handleShow }) => {
   });
   function handelSubmit(e){
 e.preventDefault()
-axios.post("http://localhost:3001/course",values)
+axios.post("http://localhost:3002/course",values)
 .then((res)=>{
   setValues(res.data)
   handleClose()
@@ -57,7 +57,7 @@ axios.post("http://localhost:3001/course",values)
             Close
           </Button>
           <Button variant="primary" onClick={handelSubmit}>
-            Save Changes
+           Create
           </Button>
         </Modal.Footer>
       </Modal>

@@ -5,10 +5,11 @@ import { HiMenu } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
-const Sidebar = ({ sidebarIcons,openSidebarToggle ,OpenSideba,findId}) => {
+const Sidebar = ({ sidebarIcons,openSidebarToggle ,OpenSideba,findId,courseData}) => {
    
     const [focus,setFocus]=useState("Course Types")
    
+ 
 
   return (
     <div className="text-white main">

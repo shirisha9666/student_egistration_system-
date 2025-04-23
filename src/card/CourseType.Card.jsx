@@ -13,6 +13,7 @@ const CourseTypeCard = ({course,setCourse}) => {
     const[findId,setFind]=useState()
    const handleEditClose=()=>setEdit(false)
     const handleEditShow=(id)=>setEdit(true)
+    
     useEffect(()=>{
         console.log("deleted id",findId)
     },[findId])

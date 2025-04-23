@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import CourseType from "./Course Type";
 import CourseOfferings from "./Course_Offerings";
@@ -12,9 +12,11 @@ import { MdCastForEducation } from "react-icons/md";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { FaUserPlus } from "react-icons/fa6";
 import Header from "./Header";
+import axios from "axios";
 
 const Home = () => {
     const [openSidebarToggle, setOpenSidebarToggle] = useState()
+      // const [courseData,setCourseData]=useState([])
    
 
   const OpenSidebar = () => {
@@ -41,6 +43,15 @@ const Home = () => {
     name:"Student Registrations",
     link:"/studentRegistations",
     icon:<FaUserPlus/>}]
+    // get functions
+ 
+    
+    // useEffect(() => {
+    //   axios.get("http://localhost:3002/course")
+    //     .then(res =>setCourseData(res.data))
+    //     .catch(err => console.log("error", err));
+    // }, []);
+    // console.log("courseData",courseData)
   return (
     <>
   
@@ -52,7 +63,8 @@ const Home = () => {
         {/* <div className={` sidebar col-2`}> */}
         <div className={` ${openSidebarToggle?"show":"hide"}  w-50vh `}>
         <Sidebar sidebarIcons={sidebarIcons}  openSidebarToggle={openSidebarToggle}
-            OpenSidebar={OpenSidebar}/>
+            OpenSidebar={OpenSidebar}
+            />
         </div>
            </div>
 

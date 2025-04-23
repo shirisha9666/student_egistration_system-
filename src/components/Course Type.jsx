@@ -26,8 +26,8 @@ const CourseType = () => {
       <div className='text-white'>
         <h1 className='h1-tag'>Course Types</h1>
       </div>
-      <div className='text-white text-left pt-2 btn ' onClick={handleShow}>
-            <button className="p-2   f-16 fw-600">Create new course </button>
+      <div className=' text-left pt-2 btn ' onClick={handleShow}>
+            <button className="p-2 f-16 fw-600  font-semebold outline-nonefocus:outline-none focus-ring">Create new course </button>
             </div>
     </div>
     <div>

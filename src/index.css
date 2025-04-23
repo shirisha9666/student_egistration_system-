@@ -28,6 +28,9 @@ a{
 .w-50vh{
   width: 50vh;
 }
+/* .outline-none{
+  outline: none;
+} */
 .web{
   width:-webkit-fill-available ;
 }

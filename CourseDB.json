@@ -1,0 +1,24 @@
+{
+  "course": [
+    {
+      "course_name": "Bootstrap",
+      "course_type": "Hindi",
+      "id": "1"
+    },
+    {
+      "course_name": "Html",
+      "course_type": "Hindi",
+      "id": "2"
+    },
+    {
+      "course_name": "Special",
+      "course_type": "Urdu",
+      "id": "1e16"
+    },
+    {
+      "course_type": "English",
+      "course_name": "Individual",
+      "id": "c97a"
+    }
+  ]
+}

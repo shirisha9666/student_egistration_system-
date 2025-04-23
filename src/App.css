@@ -132,7 +132,7 @@ color: white;
 .btn button:hover{
   background-color: rgba(44, 55, 181, 0.8);
   color: white;
-  outline: none;
+
 }
 .card-icon{
   background-color:#FF6B89;

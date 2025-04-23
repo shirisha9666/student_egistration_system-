@@ -6,7 +6,7 @@
       "id": "6c75"
     },
     {
-      "course_name": "hello world ",
+      "course_name": "hello world 123",
       "course_type": "Special",
       "id": "d765"
     },
@@ -14,6 +14,26 @@
       "course_name": "git123",
       "course_type": "Individual",
       "id": "f33d"
+    },
+    {
+      "id": "c4cd",
+      "course_name": "English",
+      "course_type": "language"
+    },
+    {
+      "id": "1a82",
+      "course_name": "English",
+      "course_type": "word"
+    },
+    {
+      "id": "fc55",
+      "course_name": "English",
+      "course_type": "Special"
+    },
+    {
+      "id": "b468",
+      "course_name": "Hindi",
+      "course_type": "css"
     }
   ]
 }

@@ -4,8 +4,7 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import { useParams } from "react-router-dom";
-import { alignPropType } from "react-bootstrap/esm/types";
+
 
 const CourseTypeCardEdit = ({
   handleEditClose,
@@ -47,7 +46,7 @@ const CourseTypeCardEdit = ({
           course_name: res.data.course_name,
           course_type: res.data.course_type,
         });
-        alert("updated successfully");
+        alert("Updated successfully");
         handleEditClose();
       })
       .catch((err) => console.log("handelEditSubmit", err));
