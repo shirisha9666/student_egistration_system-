@@ -63,6 +63,14 @@
       "contact": "1578964231",
       "course_type": "Urdu",
       "course_name": "bootstrap"
+    },
+    {
+      "id": "c29e",
+      "student_name": "sandyna",
+      "email": "sandy@gmail.com",
+      "contact": "1234567892",
+      "course_type": "Individual ",
+      "course_name": "css"
     }
   ]
 }

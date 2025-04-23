@@ -6,7 +6,7 @@ import { FaRegEdit } from "react-icons/fa";
 import CourseEditModel from '../model/Course.edit.model';
 import axios from 'axios';
 import { useNavigate, useLocation } from "react-router-dom";
-
+import toast from "react-hot-toast";
 
 const CourseCard = ({ courseData,setCourseData,courseFilter }) => {
   console.log("courseFilter.CourseCard",courseFilter)
@@ -31,8 +31,8 @@ function handleDeleteLanguageCourse(id){
 
   axios.delete(`http://localhost:3002/course/${id}`)
   .then(()=>{
-      alert("Deleted successfully")
-      setCourseData(prev => prev.filter(course => course.id !== id));
+setCourseData(prev => prev.filter(course => course.id !== id));
+alert("Deleted Succefully")
   })
   .catch((err)=>console.log("error",err))
 }

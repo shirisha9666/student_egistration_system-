@@ -6,16 +6,6 @@
       "id": "6c75"
     },
     {
-      "id": "07a9",
-      "course_name": "English",
-      "course_type": "laxmi"
-    },
-    {
-      "id": "93f7",
-      "course_name": "Hindi",
-      "course_type": "learnHind"
-    },
-    {
       "id": "5890",
       "course_name": "English",
       "course_type": "Bootstrap"
@@ -28,11 +18,6 @@
     {
       "id": "d535",
       "course_name": "Html",
-      "course_type": "English"
-    },
-    {
-      "id": "fb43",
-      "course_name": "Bootstrap",
       "course_type": "English"
     },
     {

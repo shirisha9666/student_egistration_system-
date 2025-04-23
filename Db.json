@@ -1,14 +1,9 @@
 {
   "course": [
     {
-      "id": "c4cd",
-      "course_name": "English",
-      "course_type": "language"
-    },
-    {
-      "id": "1a82",
-      "course_name": "English",
-      "course_type": "word"
+      "course_name": "English1",
+      "course_type": "language",
+      "id": "c4cd"
     },
     {
       "id": "fc55",

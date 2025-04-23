@@ -5,6 +5,7 @@ import CourseOfferings from "./Course_Offerings";
 import Courses from "./Courses";
 import StudentRegistrations from "./StudentRegistrations";
 import Sidebar from "./Sidebar";
+import { Toaster } from "react-hot-toast"
 
 import { HiMenu, HiOutlineAcademicCap } from "react-icons/hi";
 import { SiBookstack } from "react-icons/si";
@@ -15,7 +16,7 @@ import Header from "./Header";
 import axios from "axios";
 
 const Home = () => {
-    const [openSidebarToggle, setOpenSidebarToggle] = useState()
+    const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
   
    
 
@@ -60,6 +61,8 @@ const Home = () => {
    
         <div className={` ${openSidebarToggle?"show":"hide"}  w-50vh reponsiveToggle`}>
         <Sidebar sidebarIcons={sidebarIcons}  openSidebarToggle={openSidebarToggle}
+        setOpenSidebarToggle={setOpenSidebarToggle}
+        
             OpenSidebar={OpenSidebar}
             />
         </div>
@@ -85,7 +88,11 @@ const Home = () => {
            />
          </Routes>
         </div>
+        <Toaster
+  
+/>
     </div>
+   
     </>
  
   );
