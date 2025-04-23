@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://github.com/shirisha9666/student_egistration_system-",
+
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "private": true,
