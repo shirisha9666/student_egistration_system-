@@ -3,7 +3,7 @@ import RegistarStudentModel from '../model/RegistarStudentModel'
 import StudentTable from '../card/StudentTable'
 import axios from 'axios'
 
-const StudentRegistrations = () => {
+const StudentRegistrations = ({courseFilter}) => {
     const [showregister,setShowRegister]=useState(false)
     const[studentData,setStudentData]=useState([])
     const handleShowCourseRegister=()=>setShowRegister(true)
@@ -27,13 +27,13 @@ const StudentRegistrations = () => {
     </div>
      <div className=' text-left pt-2 btn ' onClick={handleShowCourseRegister}>
           <button className="p-2 f-16 fw-600  font-semebold outline-nonefocus:outline-none focus-ring
-         ">Registation </button>
+         ">Registration </button>
           </div>
          
   </div> 
   <div>
     <div>
-    <StudentTable studentData={studentData}/>
+    <StudentTable studentData={studentData} courseFilter={courseFilter}/>
     </div>
   </div>
  

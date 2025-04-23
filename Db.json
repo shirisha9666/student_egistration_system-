@@ -1,11 +1,6 @@
 {
   "course": [
     {
-      "course_name": "S",
-      "course_type": "Individual",
-      "id": "6c75"
-    },
-    {
       "id": "c4cd",
       "course_name": "English",
       "course_type": "language"
@@ -24,6 +19,11 @@
       "id": "b468",
       "course_name": "Hindi",
       "course_type": "css"
+    },
+    {
+      "id": "b03f",
+      "course_name": "m",
+      "course_type": "Group"
     }
   ]
 }

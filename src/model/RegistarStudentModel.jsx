@@ -45,7 +45,7 @@ const RegistarStudentModel = ({showregister,handleCloseCourseRegister}) => {
   return (
     <Modal show={showregister} onHide={handleCloseCourseRegister}>
     <Modal.Header closeButton>
-      <Modal.Title>students to register </Modal.Title>
+      <Modal.Title>Students to Register </Modal.Title>
     </Modal.Header>
     <Modal.Body>
       <Form>

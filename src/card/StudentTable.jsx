@@ -2,7 +2,7 @@ import React from 'react'
 import Table from 'react-bootstrap/Table';
 
 
-const StudentTable = ({studentData}) => {
+const StudentTable = ({courseFilter,studentData}) => {
  
     
   return (
@@ -17,7 +17,7 @@ const StudentTable = ({studentData}) => {
       </tr>
     </thead>
     <tbody className='f-16'>
-        {studentData.map((item,index)=>{
+        {studentData.filter(item=>!courseFilter || item.course_type===courseFilter).map((item,index)=>{
             return(
                 <tr key={index}>
                 <td>{item.id}</td>

@@ -6,11 +6,6 @@
       "id": "1"
     },
     {
-      "course_name": "Html",
-      "course_type": "Hindi",
-      "id": "2"
-    },
-    {
       "course_name": "Special",
       "course_type": "Urdu",
       "id": "1e16"
@@ -74,6 +69,11 @@
       "id": "7c96",
       "course_name": "huj",
       "course_type": "Individual"
+    },
+    {
+      "id": "4afc",
+      "course_name": "snake",
+      "course_type": "Hindi"
     }
   ]
 }

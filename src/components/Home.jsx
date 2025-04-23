@@ -16,7 +16,7 @@ import axios from "axios";
 
 const Home = () => {
     const [openSidebarToggle, setOpenSidebarToggle] = useState()
-      // const [courseData,setCourseData]=useState([])
+  
    
 
   const OpenSidebar = () => {
@@ -50,13 +50,12 @@ const Home = () => {
     
   return (
     <>
-    
-  
-    <div className="main-container d-flex w-100   ">
+   <div className="main-container d-flex w-100   ">
       <div className="w-5">
        
         <div className={`sidebar `}>
-        <span className={`px-3 text-right text-white  fw-600  f-18  cursor `}
+        <span className={`px-3 text-white  fw-600  f-20  cursor
+       d-flex justify-content-end pt-3`}
               onClick={OpenSidebar}><HiMenu /></span>
    
         <div className={` ${openSidebarToggle?"show":"hide"}  w-50vh reponsiveToggle`}>
@@ -82,7 +81,7 @@ const Home = () => {
            <Route path="/courses/:id" element={<Courses   courseFilter={courseFilter}/>} />
            <Route
              path="/studentRegistations"
-             element={<StudentRegistrations />}
+             element={<StudentRegistrations courseFilter={courseFilter}/>}
            />
          </Routes>
         </div>
