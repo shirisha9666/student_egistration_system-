@@ -32,11 +32,11 @@ axios.post("http://localhost:3002/course",values)
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
          
               <Form.Select
-                type="course_type"
+                type="text"
                 placeholder="course type"
                 autoFocus
                 onChange={(e) =>
-                  setValues({ ...values, course_name: e.target.value })
+                  setValues({ ...values, course_type: e.target.value })
                 }
               >
                 <option value="">Select course type</option>
@@ -47,8 +47,8 @@ axios.post("http://localhost:3002/course",values)
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Course Name</Form.Label>
-              <Form.Control type="Course" placeholder="Course name" autoFocus 
-              onChange={e=>setValues({...values, course_type:e.target.value})}/>
+              <Form.Control type="text" placeholder="Course name" autoFocus 
+              onChange={e=>setValues({...values, course_name:e.target.value})}/>
             </Form.Group>
           </Form>
         </Modal.Body>

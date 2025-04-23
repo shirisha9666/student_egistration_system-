@@ -35,9 +35,8 @@ const Home = () => {
   },
   {
     name:"Course Offerings",
-    link:" /course/offerings",
-
-    icon:<MdCastForEducation/>
+    link:"/course/offerings",
+ icon:<MdCastForEducation/>
   },
   {
     name:"Student Registrations",

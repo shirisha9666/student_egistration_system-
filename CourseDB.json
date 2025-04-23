@@ -19,6 +19,11 @@
       "course_type": "English",
       "course_name": "Individual",
       "id": "c97a"
+    },
+    {
+      "id": "af82",
+      "course_name": "Urdu",
+      "course_type": "shirisha"
     }
   ]
 }

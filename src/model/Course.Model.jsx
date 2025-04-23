@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-const CourseModel = ({showCourse,handleCloseCourse,handleShowCourse}) => {
+const CourseModel = ({showCourse,handleCloseCourse}) => {
     const [values, setValues] = useState({
         course_name: "",
         course_type: "",
@@ -34,11 +34,11 @@ const CourseModel = ({showCourse,handleCloseCourse,handleShowCourse}) => {
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                  
                       <Form.Select
-                        type="course_type"
+                        type="text"
                         placeholder="course type"
                         autoFocus
                         onChange={(e) =>
-                          setValues({ ...values, course_name: e.target.value })
+                          setValues({ ...values, course_type: e.target.value })
                         }
                       >
                         <option value="">Select course type</option>
@@ -49,8 +49,8 @@ const CourseModel = ({showCourse,handleCloseCourse,handleShowCourse}) => {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                       <Form.Label>Course Name</Form.Label>
-                      <Form.Control type="Course" placeholder="Course name" autoFocus 
-                      onChange={e=>setValues({...values, course_type:e.target.value})}/>
+                      <Form.Control type="text" placeholder="Course name" autoFocus 
+                      onChange={e=>setValues({...values, course_name:e.target.value})}/>
                     </Form.Group>
                   </Form>
                 </Modal.Body>
