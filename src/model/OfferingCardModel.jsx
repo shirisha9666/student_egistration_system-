@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import { toast } from "react-toastify";
 
 
 const OfferingCardModel = ({showOffering,handleCloseOffering}) => {
@@ -18,7 +19,7 @@ const OfferingCardModel = ({showOffering,handleCloseOffering}) => {
     axios.post("http://localhost:3003/course",offering)
     .then((res)=>{
       setOffering(res.data)
-      alert("created successfully")
+      toast.success("Created Successfully")
       handleCloseOffering()
     }).catch((err)=>console.log("handelSubmit",err))
     

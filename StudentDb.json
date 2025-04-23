@@ -71,6 +71,14 @@
       "contact": "1234567892",
       "course_type": "Individual ",
       "course_name": "css"
+    },
+    {
+      "id": "7a2f",
+      "student_name": "arvind",
+      "email": "arvind@gmail.com",
+      "contact": "1234667890",
+      "course_type": "Individual ",
+      "course_name": "Html"
     }
   ]
 }

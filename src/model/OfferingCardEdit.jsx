@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import { toast } from 'react-toastify';
 
 const OfferingCardEdit = ({showOfferingEdit,handleCloseOfferingEdit,offerRingId}) => {
      //  getUserFunctionality
@@ -46,7 +47,7 @@ const OfferingCardEdit = ({showOfferingEdit,handleCloseOfferingEdit,offerRingId}
               
            
             });
-            alert("updated successfully");
+            toast.success("updated successfully");
             handleCloseOfferingEdit();
           })
           .catch((err) => console.log("handelEditSubmit", err));

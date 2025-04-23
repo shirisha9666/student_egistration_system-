@@ -1,11 +1,6 @@
 {
   "course": [
     {
-      "course_name": "English1",
-      "course_type": "language",
-      "id": "c4cd"
-    },
-    {
       "id": "fc55",
       "course_name": "English",
       "course_type": "Special"
@@ -24,6 +19,16 @@
       "id": "7681",
       "course_name": "Html",
       "course_type": "Individual"
+    },
+    {
+      "id": "ad99",
+      "course_name": "Special4444",
+      "course_type": "Individual"
+    },
+    {
+      "id": "6ea1",
+      "course_name": "25896",
+      "course_type": "Group"
     }
   ]
 }

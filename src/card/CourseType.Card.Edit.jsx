@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import { toast } from 'react-toastify';
 
 
 const CourseTypeCardEdit = ({
@@ -48,7 +49,7 @@ const CourseTypeCardEdit = ({
           course_name: res.data.course_name,
           course_type: res.data.course_type,
         });
-        alert("Updated successfully");
+        toast.success("Updated Successfully");
         handleEditClose();
       })
       .catch((err) => console.log("handelEditSubmit", err));

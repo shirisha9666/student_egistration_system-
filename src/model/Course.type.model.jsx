@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import toast from "react-hot-toast";
 
 const Coursetypemodel = ({ show, setShow, handleClose, handleShow }) => {
   const [values, setValues] = useState({
@@ -15,7 +16,7 @@ e.preventDefault()
 axios.post("http://localhost:3001/course",values)
 .then((res)=>{
   setValues(res.data)
-  alert("Created Successfully")
+  toast.success("Created Successfully")
   handleClose()
 }).catch((err)=>console.log("handelSubmit",err))
 

@@ -5,6 +5,7 @@ import { useNavigate, useLocation, replace } from "react-router-dom";
 import { FaRegEdit } from "react-icons/fa";
 import axios from 'axios';
 import OfferingCardEdit from '../model/OfferingCardEdit';
+import { toast } from 'react-toastify';
 
 const OfferingCard = ({offeringData,setOfferingData,courseFilter,handleShowOffring}) => {
   console.log("OfferingCard.courseFilter",courseFilter)
@@ -21,7 +22,8 @@ function handleDeleteOfferingCourse(id){
 
     axios.delete(`http://localhost:3003/course/${id}`)
     .then(()=>{
-        alert("Deleted successfully")
+    
+           toast.success("Deleted successfully");
         setOfferingData(prev => prev.filter(course => course.id !== id));
     })
     .catch((err)=>console.log("error",err))

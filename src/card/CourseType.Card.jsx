@@ -6,6 +6,7 @@ import { FaRegEdit } from "react-icons/fa";
 import axios from 'axios';
 import CourseTypeCardEdit from './CourseType.Card.Edit';
 import { useNavigate, useLocation } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 
 
@@ -36,7 +37,7 @@ const CourseTypeCard = ({ courseType, setCourseType, courseFilter,handleShow }) 
 
     axios.delete(`http://localhost:3001/course/${id}`)
       .then(() => {
-        alert("Deleted Successfully")
+        toast.success("Deleted Successfully")
         setCourseType(prev => prev.filter(course => course.id !== id));
       })
       .catch((err) => console.log("error", err))

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import { toast } from 'react-toastify';
 
 const RegistarStudentModel = ({showregister,handleCloseCourseRegister}) => {
     const [studentValue,setStudentValue]=useState({
@@ -21,23 +22,23 @@ const RegistarStudentModel = ({showregister,handleCloseCourseRegister}) => {
         e.preventDefault()
        const{student_name,email,contact,course_type,course_name}=studentValue
        if (!student_name || !email || !contact || !course_type || !course_name) {
-        alert("Please fill in all the fields");
+        toast.error("Please fill in all the fields");
         return;
       }
         if(!isValidEmail(email)){
-            alert("Please enter a valid email address");
+          toast.error("Please enter a valid email address");
             return;
         
         }
         if (contact.length !== 10 || !/^\d+$/.test(contact)) {
-            alert("Please enter a valid 10-digit contact number");
+          toast.error("Please enter a valid 10-digit contact number");
             return;
           }
 
           axios.post("http://localhost:3004/course",studentValue)
           .then((res)=>{
             setStudentValue(res.data)
-            alert("Student Registered successfully")
+            toast.success("Student Registered Successfully")
             handleCloseCourseRegister()
           }).catch((err)=>console.log("handelSubmit",err))
 
