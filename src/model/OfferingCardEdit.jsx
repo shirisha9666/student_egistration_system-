@@ -9,7 +9,7 @@ import { toast } from 'react-toastify';
 
 const OfferingCardEdit = ({showOfferingEdit,handleCloseOfferingEdit,offerRingId}) => {
      //  getUserFunctionality
-     const [offerCorseData,setOfferCorsData]=useState([])
+    //  const [offerCorseData,setOfferCorsData]=useState([])
      const[offeringValue,setOfferingValue]=useState({
         course_type: "",
         course_name: "",
@@ -21,7 +21,7 @@ const OfferingCardEdit = ({showOfferingEdit,handleCloseOfferingEdit,offerRingId}
           axios
             .get(`http://localhost:3003/course/${offerRingId}`)
             .then((res) => {
-                setOfferCorsData(res.data);
+                // setOfferCorsData(res.data);
                 setOfferingValue({
                     course_name: res.data?.course_name || "",
                     course_type: res.data?.course_type || "",
@@ -40,7 +40,7 @@ const OfferingCardEdit = ({showOfferingEdit,handleCloseOfferingEdit,offerRingId}
         axios
           .put(`http://localhost:3003/course/${offerRingId}`, offeringValue)
           .then((res) => {
-            setOfferCorsData(res.data);
+            // setOfferCorsData(res.data);
             setOfferingValue({
                 course_type: res.data?.course_type || "",
                 course_name: res.data?.course_name || "",

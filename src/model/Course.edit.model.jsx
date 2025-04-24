@@ -14,7 +14,7 @@ const CourseEditModel = ({showCourseEdit,handleCloseCourseEdit,courseFindId}) =>
         course_name: "",
   
       });
-      const [courseData,setCourseData]=useState([])
+      // const [courseData,setCourseData]=useState([])
 
       //  getUserFunctionality
 
@@ -25,7 +25,7 @@ const CourseEditModel = ({showCourseEdit,handleCloseCourseEdit,courseFindId}) =>
           axios
             .get(`http://localhost:3002/course/${courseFindId}`)
             .then((res) => {
-              setCourseData(res.data);
+              // setCourseData(res.data);
               setValuesCourse({
                 course_name: res.data.course_name,
                 course_type: res.data.course_type,
@@ -40,7 +40,7 @@ const CourseEditModel = ({showCourseEdit,handleCloseCourseEdit,courseFindId}) =>
         axios
           .put(`http://localhost:3002/course/${courseFindId}`, valuesCourse)
           .then((res) => {
-            setCourseData(res.data);
+            // setCourseData(res.data);
             setValuesCourse({
               course_name: res.data.course_name,
               course_type: res.data.course_type,
