@@ -8,7 +8,7 @@ import OfferingCardEdit from '../model/OfferingCardEdit';
 import { toast } from 'react-toastify';
 
 const OfferingCard = ({offeringData,setOfferingData,courseFilter}) => {
-  console.log("OfferingCard.courseFilter",courseFilter)
+ 
     const[offerRingId,setOfferingId]=useState()
     
      const [showOfferingEdit,setOfferingEdit]=useState(false)
@@ -35,7 +35,7 @@ function handleOffreingEdit(id){
     handleShowOffringEdit()
    
 }
-console.log("OfferingCard.CourseOfferings",offeringData)
+
   return (
     <div className='d-flex gap-2 flex-wrap '>
     {offeringData.filter(item=>!courseFilter||item.course_type===courseFilter).map((item, index) => {
