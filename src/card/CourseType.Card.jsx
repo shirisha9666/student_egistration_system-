@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { MdDelete } from "react-icons/md";
 
@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 
 
 
-const CourseTypeCard = ({ courseType, setCourseType, courseFilter,handleShow }) => {
+const CourseTypeCard = ({ courseType, setCourseType, courseFilter }) => {
   const [showEdit, setEdit] = useState(false)
   const [findId, setFind] = useState()
   const navigate = useNavigate();

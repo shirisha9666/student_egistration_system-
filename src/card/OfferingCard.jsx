@@ -7,7 +7,7 @@ import axios from 'axios';
 import OfferingCardEdit from '../model/OfferingCardEdit';
 import { toast } from 'react-toastify';
 
-const OfferingCard = ({offeringData,setOfferingData,courseFilter,handleShowOffring}) => {
+const OfferingCard = ({offeringData,setOfferingData,courseFilter}) => {
   console.log("OfferingCard.courseFilter",courseFilter)
     const[offerRingId,setOfferingId]=useState()
     
