@@ -17,7 +17,7 @@ const Sidebar = ({ sidebarIcons,openSidebarToggle ,OpenSideba,findId,courseData,
    
    <ul className="sidebar-ul-tag f-20 fw-400  ">
              <li className="py-4 px-3 fw-600 hover-sidear-heading ">
-               <a className="d-flex text-left" href="#">
+               <a className="d-flex text-left" href="./">
                  <span className="px-2">
    
                    <SiBookstack className="f-20" />{" "}

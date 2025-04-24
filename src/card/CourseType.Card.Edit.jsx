@@ -19,7 +19,7 @@ const CourseTypeCardEdit = ({
     course_type: "",
   });
 
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const CourseTypeCardEdit = ({
       axios
         .get(`http://localhost:3001/course/${findId}`)
         .then((res) => {
-          setData(res.data);
+          // setData(res.data);
           setValues({
             course_name: res.data.course_name || " ",
             course_type: res.data.course_type || "",
@@ -43,7 +43,7 @@ const CourseTypeCardEdit = ({
     axios
       .put(`http://localhost:3001/course/${findId}`, values)
       .then((res) => {
-        setData(res.data);
+        // setData(res.data);
         setValues({
           course_name: res.data.course_name,
           course_type: res.data.course_type,
