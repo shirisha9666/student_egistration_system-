@@ -1,7 +1,6 @@
-import { Button } from 'bootstrap'
+
 import React from 'react'
-import { FaSearch } from "react-icons/fa";
-import Form from "react-bootstrap/Form";
+
 
 const Header = ({ setCourseFilter, courseFilter }) => {
   console.log("courseFilter", courseFilter)

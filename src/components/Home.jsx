@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import CourseType from "./Course Type";
 import CourseOfferings from "./Course_Offerings";
@@ -10,10 +10,10 @@ import { Toaster } from "react-hot-toast"
 import { HiMenu, HiOutlineAcademicCap } from "react-icons/hi";
 import { SiBookstack } from "react-icons/si";
 import { MdCastForEducation } from "react-icons/md";
-import { AiOutlinePlusCircle } from "react-icons/ai";
+
 import { FaUserPlus } from "react-icons/fa6";
 import Header from "./Header";
-import axios from "axios";
+
 
 const Home = () => {
     const [openSidebarToggle, setOpenSidebarToggle] = useState(false)

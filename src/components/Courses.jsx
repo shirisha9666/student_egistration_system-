@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import CourseCard from '../card/Course.Card'
 import CourseModel from '../model/Course.Model'
 import axios from 'axios'
-import CourseEditModel from '../model/Course.edit.model'
+
 
 
 const Courses = (  {courseFilter}) => {

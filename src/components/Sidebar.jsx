@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 import { SiBookstack } from "react-icons/si";
-import { HiMenu } from "react-icons/hi";
-import { RxCross2 } from "react-icons/rx";
+
 import { Link } from "react-router-dom";
 
 const Sidebar = ({ sidebarIcons,openSidebarToggle ,OpenSideba,findId,courseData,setOpenSidebarToggle}) => {
