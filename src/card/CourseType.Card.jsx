@@ -28,9 +28,7 @@ const CourseTypeCard = ({ courseType, setCourseType, courseFilter }) => {
   }
 
 
-  // useEffect(() => {
-  //   console.log("deleted id", findId)
-  // }, [findId])
+
 
 
   function handleDeleteCourse(id) {

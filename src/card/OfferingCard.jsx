@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { MdDelete } from "react-icons/md";
-import { useNavigate, useLocation, replace } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FaRegEdit } from "react-icons/fa";
 import axios from 'axios';
 import OfferingCardEdit from '../model/OfferingCardEdit';

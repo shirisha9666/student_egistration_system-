@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from "axios"
-import Button from 'react-bootstrap/Button';
+
 import Coursetypemodel from '../model/Course.type.model';
 import CourseTypeCard from '../card/CourseType.Card';
 
