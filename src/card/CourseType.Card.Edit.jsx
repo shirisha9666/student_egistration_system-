@@ -10,8 +10,7 @@ import { toast } from 'react-toastify';
 const CourseTypeCardEdit = ({
   handleEditClose,
   showEdit,
-  setEdit,
-  handleEditShow,
+
   
   findId,
 }) => {
