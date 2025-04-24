@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaRegEdit } from "react-icons/fa";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
@@ -33,7 +33,7 @@ const OfferingCardEdit = ({showOfferingEdit,handleCloseOfferingEdit,offerRingId}
       }, [offerRingId]);
       // edit functionality
 
-      console.log("offeringValueEdit",offeringValue)
+
       
       function handelCourseEditSubmit(e){
         e.preventDefault();

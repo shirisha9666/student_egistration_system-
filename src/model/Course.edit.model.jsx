@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaRegEdit } from "react-icons/fa";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
@@ -8,7 +8,7 @@ import Modal from "react-bootstrap/Modal";
 import { toast } from 'react-toastify';
 
 const CourseEditModel = ({showCourseEdit,handleCloseCourseEdit,courseFindId}) => {
-  console.log("courseFindId",courseFindId)
+
     const [valuesCourse, setValuesCourse] = useState({
         course_type: "",
         course_name: "",
@@ -34,7 +34,7 @@ const CourseEditModel = ({showCourseEdit,handleCloseCourseEdit,courseFindId}) =>
             .catch((err) => console.log("editCourseTypeCard", err));
         }
       }, [courseFindId]);
-      console.log("courseData01586",courseData)
+
       function handelCourseEditSubmit(e){
         e.preventDefault();
         axios
